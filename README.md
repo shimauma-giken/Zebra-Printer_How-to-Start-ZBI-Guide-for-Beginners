@@ -62,6 +62,23 @@
     ```
     ![alt text](image-2.png)
 
+1. インストールの可否は下記コマンドで確認が可能。
+    ```
+    ! U1 do "file.dir" "E"
+    "
+    - DIR E:*.*
+    ...
+    * E:ANMDJ.TTF  22927536
+    * E:FONTXU_FIXED.FNT      6919
+    * E:GOTHIC24.FNT    536450
+    * E:HELLO01.BAS       800 ★
+    * E:IPAG.TTF   6235344
+    ...
+
+    -   2203648 bytes free E: ONBOARD FLASH    
+    ```
+
+
 ### ZBIの実行
 
 
