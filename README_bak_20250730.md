@@ -145,45 +145,5 @@
 
     1. Autoexec非実行モードをプリンタを起動し、Autoexec/BASファイルを削除する。
 
-### [Tips] 実機を用いたデバッグ、リアルタイム動作確認
-
-ZBIの最終動作チェックは実機を用いて実施することが推奨される。下記では未使用ポート（シリアル）を用いて
-
-1. ゼブラプリンタとシリアル接続をする。
-
-    [参考：ZebraプリンタとWindows PCをシリアル接続する方法](https://github.com/shimauma-giken/Zebra-Printer_Connect_to-Printer-from-Windows-Laptop-via-Serial-Connection)
-
-1. 下記サンプルコマンドを参考にデバッグを実施する。各コマンドの詳細についてはZPLプログラミングマニュアルを参照すること。
-
-    </br>
-
-
-    ```
-    ; 事前にZBI-Developerで構文確認をしておくこと。
-
-
-    ; ZBIモードに移行
-    ~JI
-
-    ; 新規コードの登録
-    NEW
-
-    ; コードを入力
-    10 PRINT "HELLO WORLD"
-
-    ; 登録されたコード一覧
-    LIST
-    10 PRINT "HELLO WORLD"
-
-    ; 実行
-    > RUN
-    HELLO WORLD
-
-    ; 要所要所の確認ポイントではPRINTなどで確認したい値などを出力確認すること。
-    ; エラー発生時は行番号が表示されるので、前後や関連処理のコードを確認すること。
-
-    ; ZPLモードに戻る
-    >ZPL
-
 
 以上
